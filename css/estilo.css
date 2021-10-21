@@ -170,66 +170,76 @@ header {
 
 /* MEU CSS */
 /* MOBILE */
-@media (min-width: 150px) and (max-width:678px) {
-	.secao {
-		width: 96%;
-		float: none;
-		margin: 2.5% auto;
-		text-align: center;
-	}
-	#copacabana {
-		width: 100%;
-		margin: 2% 2.5%;
-		display: flex;
-	}
-	#copacabana img,
-	#copacabana h2 {
-		width: 40%;
-		margin: 0 5%;
-	}
-	#copacabana h2 {
-		margin-top: auto;
-		margin-bottom: auto;
-		margin-left: 0;
-	}
-	.mini {
-		float: left;
-		width: 100%;
-	}
-	.mini img {
-		width: 90%;
-		margin: 0 5%;
-	}
-	.container {
-		margin: 0% auto;
-	}
-	.logo,
-	.secao {
-		padding: 0 1%;
-	}
-	.logo,
-	.busca,
-	.barra-nav,
-	.menu-principal {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.menu-principal li {
-		float: left;
-	}
-	.header {
-		padding: 2em 0;
-	}
-	.destaques {
-		margin-top: 1em;
-	}
-	.barra-nav {
-		margin: 1em 0;
-	}
-	.bbb {
-		width: 40%;
-		margin: 0 auto;
-	}
+.secao {
+	width: 96%;
+	float: none;
+	margin: 2%;
+	text-align: center;
+}
+#copacabana {
+	width: 100%;
+	align-items: center;
+}
+#copacabana img,
+#copacabana h2 {
+	width: 90%;
+	margin: 2% 5%;
+}
+.mini {
+	width: 100%;
+}
+.mini img, .mini h2 {
+	width: 90%;
+	margin: 0 5%;
+}
+.container {
+	width: 100%;
+	text-align: center;
+	margin: 0% auto;
+}
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 2% 0;
+}
+ul.menu-principal {
+	display: flex;
+	justify-content: center;
+	padding: 1% 0;
+}
+ul.menu-principal li, a.noticias, a.esportes, a.famosos {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 0;
+}
+.busca {
+	display: flex;
+	justify-content: center;
+	padding: 2% 0;
+}
+.header {
+	padding: 2em 0;
+}
+.destaques {
+	margin-top: 1em;
+}
+.barra-nav {
+	margin: 1% 0;
+}
+.bbb {
+	width: 90%;
+	margin: 0 5%;
 }
 
 /* TABLET */
@@ -247,12 +257,15 @@ header {
 	.mini img {
 		margin-left: 10%;
 	}
-	.container {
-		margin: 0% auto;
+	.nav {
+		display: grid;
+		grid-template-rows: 100% 100%;
+		grid-template-columns: 50% 50%; 
 	}
 	.logo,
 	.secao {
 		padding: 0 1%;
+		margin: 0;
 	}
 	.logo,
 	.busca,
@@ -260,6 +273,30 @@ header {
 	.menu-principal {
 		display: inline-block;
 		vertical-align: middle;
+	}
+	.logo {
+		margin-top: auto;
+		margin-bottom: auto;
+		display: flex;
+		align-items: center;
+	}
+	.barra-nav {
+		align-items: center;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-top: 2%;
+	}
+	.busca {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	ul.menu-principal li, a.noticias, a.esportes, a.famosos {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0;
 	}
 	.menu-principal li {
 		float: left;
@@ -269,9 +306,6 @@ header {
 	}
 	.destaques {
 		margin-top: 1em;
-	}
-	.barra-nav {
-		margin: 1em 0;
 	}
 	.bbb {
 		margin-top: -8%;
@@ -290,18 +324,38 @@ header {
 		width: 50%;
 	}
 	.container {
+		display: inline-block;
 		margin: 0 auto;
 		max-width: 1200px;
+		width: 100%;
 	}
-	.logo, .secao {
+	.secao {
 		padding: 0 1%;
 	}
-	.logo, .busca, .barra-nav, .menu-principal {
-		display: inline-block;
-		vertical-align: middle;
+	.nav {
+		display: grid;
+		width: 100%;
+		justify-content: center;
+		grid-template-rows: 100%;
+		grid-template-columns: 40% 60%
 	}
-	.menu-principal li {
-		float: left;
+	.barra-nav {
+		display: flex;
+		align-items: center;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+	}
+	ul.menu-principal {
+		padding-right: auto;
+		padding-left: auto;
+		width: 50%;
+	}
+	.busca {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.header {
 		padding: 0.5em 0;
