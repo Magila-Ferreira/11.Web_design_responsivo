@@ -182,15 +182,15 @@ header {
 }
 #copacabana img,
 #copacabana h2 {
-	width: 90%;
-	margin: 2% 5%;
+	width: 60%;
+	margin: 2% 20%;
 }
 .mini {
 	width: 100%;
 }
 .mini img, .mini h2 {
-	width: 90%;
-	margin: 0 5%;
+	width: 60%;
+	margin: 0 20%;
 }
 .container {
 	width: 100%;
@@ -238,24 +238,21 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 	margin: 1% 0;
 }
 .bbb {
-	width: 90%;
-	margin: 0 5%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* TABLET */
 @media (min-width: 680px) {
 	.secao {
-		width: 46%;
+		width: 50%;
 		float: left;
-		margin: 0 2%;
 	}
 	.mini {
 		float: left;
-		width: 45%;
+		width: 50%;
 		text-align: center;
-	}
-	.mini img {
-		margin-left: 10%;
 	}
 	.nav {
 		display: grid;
@@ -308,7 +305,7 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 		margin-top: 1em;
 	}
 	.bbb {
-		margin-top: -8%;
+		margin-bottom: 2%;
 	}
 }
 
