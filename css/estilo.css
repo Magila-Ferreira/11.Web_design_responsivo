@@ -193,9 +193,9 @@ header {
 	margin: 0 20%;
 }
 .container {
-	width: 100%;
+	width: 96%;
 	text-align: center;
-	margin: 0% auto;
+	margin: 0 2%;
 }
 .logo,
 .busca,
@@ -239,6 +239,7 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 }
 .bbb {
 	width: 70%;
+	margin-bottom: 5%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -254,6 +255,11 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 		width: 50%;
 		text-align: center;
 	}
+ 	.container {
+		display: inline-block;
+		width: 96%;
+		margin: 0 2%;
+	} 
 	.nav {
 		display: grid;
 		grid-template-rows: 100% 100%;
@@ -312,7 +318,7 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 /* DESKTOP */
 @media (min-width: 1000px) {
 	.secao {
-		width: 30.333%;
+		width: 31%;
 		float: left;
 		margin: 0 1.5%;
 	}
@@ -321,7 +327,7 @@ ul.menu-principal li, a.noticias, a.esportes, a.famosos {
 		width: 50%;
 	}
 	.container {
-		display: inline-block;
+		display: flex;
 		margin: 0 auto;
 		max-width: 1200px;
 		width: 100%;
