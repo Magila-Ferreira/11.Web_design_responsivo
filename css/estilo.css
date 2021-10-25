@@ -169,6 +169,57 @@ header {
 }
 
 /* MEU CSS */
+/* MOBILE PERSONALIZADO */
+@MEDIA (max-width: 400px) {
+	.nav {
+		display: flex;
+		width: 100%;
+		text-align: center;
+	}
+
+	.barra-nav {
+		background: #aaa;
+		padding: 1em;
+		margin: 0;
+
+		height: 100%;
+		width: 90%;
+		max-width: 320px;
+
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: -90%;
+
+		transition: left 0.3s ease-out;
+	}
+	.menu-ativo .barra-nav {
+		left: 0;
+	}
+	.menu-ativo:after {
+		content: "";
+		display: block;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.menu-principal li {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+@media not all and (max-width: 400px) {
+	.menu-abrir, .menu-fechar {
+		display: none;
+	}
+}
+
 /* MOBILE */
 .secao {
 	width: 96%;
