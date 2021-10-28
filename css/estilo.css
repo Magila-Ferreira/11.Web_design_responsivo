@@ -176,7 +176,6 @@ header {
 		width: 100%;
 		text-align: center;
 	}
-
 	.barra-nav {
 		background: #f9f9f9;
 		padding: 1em;
@@ -184,12 +183,12 @@ header {
 
 		height: 100%;
 		width: 90%;
-		max-width: 320px;
+		max-width: 300px;
 
 		position: fixed;
 		z-index: 1;
 		top: 0;
-		left: -90%;
+		left: -95%;
 
 		transition: left 0.3s ease-out;
 	}
@@ -208,10 +207,52 @@ header {
 
 		background: rgba(0, 0, 0, 0.7);
 	}
-	.menu-principal li {
+	nav.barra-nav ul.menu-principal {
+		float: none;
+		display: block;
+	}
+	nav.barra-nav ul.menu-principal li {
 		padding: 1em 0;
 		font-size: 1.2em;
 		width: 100%;
+
+		float: none;
+		display: block;
+ 		padding-top: 5%;
+		padding-bottom: 0;
+	}
+	nav.barra-nav ul.menu-principal li:last-child {
+		padding-bottom: 5%;
+	}
+	.menu-abrir, .menu-fechar {
+		background: none;
+		border: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		font-size: 1.6em;
+		text-indent: -999em;
+	}
+	.menu-abrir {
+		height: 0;
+ 		width: .75em;
+		padding-top: .1em;
+		border-top: .375em double #000;
+		border-bottom: .125em solid #000;
+
+ 		vertical-align: middle;
+		margin: 1em 0.5em;
+	}
+	.menu-fechar {
+		position: relative;
+		height: 1em;
+		width: 1em;
+	}
+	.menu-fechar:before {
+		content: '\00D7';
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: 0;
 	}
 }
 
@@ -262,6 +303,9 @@ header {
 	justify-content: center;
 	margin: 0;
 	padding: 2% 0;
+}
+.logo img {
+	width: 200px;
 }
 ul.menu-principal {
 	display: flex;
